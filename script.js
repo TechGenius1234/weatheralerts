@@ -5,7 +5,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     
     // Simple validation
     if (username === 'evan.degroot' && password === '20459$78') {
-        window.location.href = 'https://github.com/';
+        window.location.href = 'kelownaweatheralerts.html';
     } else {
         document.getElementById('message').textContent = 'Invalid username or password!';
     }
