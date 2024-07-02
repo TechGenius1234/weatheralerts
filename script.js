@@ -1,4 +1,3 @@
-// Define a JavaScript object to store username-password pairs
 var users = {
     "admin": "password",
     "user1": "pass123",
@@ -10,9 +9,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
     
-    // Check if the entered username exists in the users object and if the password matches
     if (users.hasOwnProperty(username) && users[username] === password) {
-        // Redirect to GitHub based on username (replace with your GitHub page URLs)
         switch (username) {
             case 'admin':
                 window.location.href = 'https://github.com/';
