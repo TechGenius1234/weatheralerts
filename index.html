@@ -4,21 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Function to handle login
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            
+            // Perform basic validation (you can enhance this)
+            if (username === "evan.degroot" && password === "pa55w0rd") {
+                // Redirect to the email service page
+                window.location.href = "kelownaweatheralerts.html";
+            }
+                 if (username === "weatherguy" && password === "guywithweather") {
+                // Redirect to the email service page
+                window.location.href = "kelownaweatheralerts.html";
+            } else {
+                alert("Invalid username or password. Please try again.");
+            }
+        }
+    </script>
 </head>
 <body>
-    <div class="login-container">
-        <h1>Login</h1>
-        <form id="loginForm">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-    <button type="submit">Login</button>
+    <h2>Login Page</h2>
+    <form>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <button type="button" onclick="login()">Login</button>
     </form>
-    <div id="message"></div>
-    </div>
-    <script src="script.js"></script>
 </body>
 </html>
-
